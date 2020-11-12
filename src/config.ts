@@ -1,0 +1,39 @@
+export default {
+  database: {
+    host: 'floorplot-db-nyc-do-user-8235784-0.b.db.ondigitalocean.com',
+    port: 25060,
+    user: 'doadmin',
+    password: 'eoh5ntgkfo6bjqgv',
+    database: 'defaultdb',
+    ssl: {
+      rejectUnauthorized: false,
+      ca: `
+      -----BEGIN CERTIFICATE-----
+MIIEQTCCAqmgAwIBAgIUdFh2u/Fk05g0G3aQRwKDV/mZl8swDQYJKoZIhvcNAQEM
+BQAwOjE4MDYGA1UEAwwvZDY4ZDVmODYtZDI0Ni00ZTI2LTk2MjQtMDRhY2FjMjVj
+YjA3IFByb2plY3QgQ0EwHhcNMjAxMTA1MDYwOTEwWhcNMzAxMTAzMDYwOTEwWjA6
+MTgwNgYDVQQDDC9kNjhkNWY4Ni1kMjQ2LTRlMjYtOTYyNC0wNGFjYWMyNWNiMDcg
+UHJvamVjdCBDQTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAKx4FSIw
+WegvAcvF42s9n/Lr+tkc5qSJvwSWc5I/O5Zo6aS/2dC3hDrvnor0I78q+il+GIIG
+jxFRQoOgU0YIq+r6fN9VTsWVifMjRpISIHytgyH6Rem2nTkgFN6QLHf4AI0BqVYX
+V2dQwvvkC89sQ8a+hS5KIs4Vd2Gew/sbZqImZPDj27o17yp72cak/HYJxy0wh3/2
+AQoRGDn2VVSJZIDg/18uxomTdpQ4Pe5raIj4eCZ3uU6ZDWkP44ULokVCLT/w1C2k
+rjDYBsPTLNEUl0zvBetpfAlLgu9Ml/4F2j4jLRm4D78LCrID3kN4rqcXMCOBf+0l
+Eh8VmpOf3rVAnBPfOt65egUIlhAOhCyF9t4aqxzVl6t1BQTxATvzV7s9NayYDrM5
+zlLh5f9YaxFvaNgObmzaEzjC/UrZowSRKoaQBUhkZ71izaxontIcQXnCX/CdN+tM
+pBalLP+RCxHpnv4ixMrY+d7J6DmKLaYnPuIunnLIHBKmWkO6oUzSzN21awIDAQAB
+oz8wPTAdBgNVHQ4EFgQU0MfVpWaX83OJq4RNtJm1R/9TAmAwDwYDVR0TBAgwBgEB
+/wIBADALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQEMBQADggGBAC7SCpNc6BNmhEyR
+sY4ta2q0ynva1/wEDYRqQsZBlL6HgOtxKtGv1HdwVm3doSKRCLsCXbdTAqYVOa+R
+9u5//g00Gio+qHcVCFzCRVs0MTTv2tyxK1Rhz5dtHXwY0HBW9nuVqNjfxmXhr+2w
+tQvWI2O3llvlgDKleIWjuShwS+zzvgTA2OwWxzzz6NBZiDyoP0GE33q6YsYILypb
+dvcs43JAPJeWUlLcHr+h12cbjuX0AXUiKbwp3MdGAs+1sIQeOG7gGSYocmvfqPQv
+k5JcXAKh9SimOtyXYmz+S64CPDKmt1X7unR0yKfzvpsvGh9AstIhRy7H1apc9WNg
+T7aKLlgX1lz3Z/uCSuhkJOOFZ9JKjCKJRd73VS1iz/2D799NhRUa9cL31Tzxy+d7
+/UYbeL5t6LcTVzrPeQb76H9i8O4sFK7KPzPcypLPcJNVzOeAVs4vRazZMcKg+PmT
+gtY9LdKqHbTt0LvcrlZvIvBh1nHJrcHfg3mmsTWcCz++lVfs7g==
+-----END CERTIFICATE-----
+      `
+    }
+  }
+}

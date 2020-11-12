@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "~types/*": [ "types/*" ],
+      "~utils/*": [ "utils/*" ],
+      "~models/*": [ "db/models/*" ],
+      "~config": [ "config" ]
+    }
+  },
+  "lib": ["es6"]
+}
