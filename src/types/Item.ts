@@ -17,9 +17,9 @@ type Item = UnfinishedItem & {
   price_usd: number;
   price_msrp_usd: number | null;
   title: string;
-  height_in: number[];
-  length_in: number[];
-  depth_in: number[];
+  z_in: number[];
+  x_in: number[];
+  y_in: number[];
   star_count: number;
   reviewers_count: number;
   manufacturer: string | null;
