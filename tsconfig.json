@@ -10,6 +10,7 @@
     "baseUrl": "./src",
     "paths": {
       "~types/*": [ "types/*" ],
+      "~routes/*": [ "routes/*" ],
       "~utils/*": [ "utils/*" ],
       "~models/*": [ "db/models/*" ],
       "~config": [ "config" ]

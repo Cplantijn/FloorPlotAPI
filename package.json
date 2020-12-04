@@ -9,23 +9,30 @@
   "_moduleAliases": {
     "~config": "./dist/config",
     "~utils": "./dist/utils",
-    "~models": "./dist/db/models"
+    "~models": "./dist/db/models",
+    "~routes": "./dist/routes"
   },
   "scripts": {
+    "dev": "yarn clean; concurrently \"tsc -w\" \"nodemon dist/index.js\"",
     "start": "yarn clean && tsc && node ./dist/index.js",
     "clean": "rimraf ./dist"
   },
   "devDependencies": {
+    "@types/express": "^4.17.9",
     "@types/mathjs": "^6.0.7",
     "@types/node": "^14.14.7",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
+    "concurrently": "^5.3.0",
     "eslint": "^7.13.0",
     "module-alias": "^2.2.2",
+    "nodemon": "^2.0.6",
     "rimraf": "^3.0.2",
     "typescript": "^4.0.5"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "mathjs": "^8.0.1",
     "pg": "^8.5.0"
   }
