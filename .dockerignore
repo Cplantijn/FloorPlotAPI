@@ -1,4 +1,8 @@
 .git
+.gitignore
+dist
+README.md
+.esintrc.json
 node_modules
 yarn-debug.log*
 yarn-error.log

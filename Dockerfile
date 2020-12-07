@@ -1,12 +1,23 @@
-FROM node:14.15.1-alpine
+FROM node:14.15.1-alpine as BUILD_IMAGE
 
-WORKDIR /home/node/app
+WORKDIR /app
 
-COPY package.json /home/node/app
-COPY yarn.lock /home/node/app
+COPY package.json yarn.lock .yarnclean ./
 
 RUN yarn install --frozen-lock-file
 
 COPY . .
-ENV PORT 3002
-CMD yarn build; yarn start
+
+RUN yarn build
+RUN rm -rf ./node_modules
+RUN yarn install --frozen-lock-file --production
+
+FROM node:14.15.1-alpine
+
+WORKDIR /app
+
+COPY --from=BUILD_IMAGE /app/dist ./dist
+COPY --from=BUILD_IMAGE /app/package.json ./package.json
+COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
+
+CMD yarn start

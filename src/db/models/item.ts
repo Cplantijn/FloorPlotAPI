@@ -1,8 +1,6 @@
 import db from '../index';
 import { buildClause } from '~utils/database';
 
-import Item from '~types/item';
-
 const arrayCompMapping = {
   xMin: { col: 'x_in', operator: '<=' },
   xMax: { col: 'x_in', operator: '>=' },
